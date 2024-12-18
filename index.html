@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaquinha Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #131315;
+        }
+
+        header {
+            height: 100vh;
+            background: url('beaconnavi.jpg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+    header {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('beaconnavi.jpg') no-repeat center center/cover;
+        background-size: cover; /* Garante que a imagem preencha o container */
+        height: 70vh; /* Reduz a altura, mas ainda ocupa boa parte da tela */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Mantém o texto legível */
+        padding: 10px; /* Adiciona espaçamento para melhorar o layout */
+    }
+}
+
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .sobre {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            background-color: #131315;
+            color: white;
+        }
+
+        .sobre img {
+            flex: 1;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .sobre-texto {
+            flex: 1;
+        }
+
+        .pix {
+            text-align: center;
+            background-color: #1E1E1E;
+            color: white;
+        }
+
+        .pix img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem auto;
+            display: block;
+        }
+
+        .videos{
+            background-color: #131315;
+            text-align: center;
+            color: white;
+        }
+
+        .videos iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            margin: 1rem auto;
+            display: block;
+        }
+
+        footer {
+            background: #1E1E1E;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer a {
+            color: red;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .sobre {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ajude o projeto Beacon Navigator a participar da 13ª edição do Campus Mobile 2025 em São Paulo SP</h1>
+    </header>
+
+    <section id="sobre" class="sobre">
+        <div class="sobre-texto">
+            <h2>Sobre</h2>
+            <br>
+            <p>
+                        Ajude o Beacon Navigator a brilhar no Campus Mobile 2025∴ 
+
+        Nosso projeto, Beacon Navigator, foi selecionado entre os 18 melhores do Brasil na categoria Saúde para o Campus Mobile 2025, em São Paulo. <br> <br>Criamos um dispositivo móvel que utiliza Bluetooth, GPS e beacons para garantir mais autonomia e acessibilidade a pessoas com deficiência auditiva. <br> <br>
+
+        O evento cobrirá tudo, menos as passagens aéreas, e precisamos da sua ajuda para chegar lá! Cada contribuição nos aproxima de mostrar ao Brasil uma solução que pode mudar vidas. <br> <br>
+
+        Faça parte dessa conquista e contribua com o que seu coração desejar. 
+
+            </p>
+        </div>
+        <img src="campusmobile.jpg" alt="Descrição da imagem">
+    </section>
+
+    <section id="pix" class="pix">
+        <h2>Informações para Pix</h2> <br>
+        <p>
+            <strong>Você pode contribuir com qualquer valor</strong>
+            <br> <br>
+            Chave Pix: <span id="pix-key">81987228835</span>
+            <button id="copy-btn" style="margin-left: 10px; padding: 5px 10px; border: none; border-radius: 5px; background-color: red; color: white; cursor: pointer;">Copiar</button>
+            <br> <br>
+            Banco: CAIXA ECONÔMICA FEDERAL<br> <br>
+            Destinatário: Jairo Marques Marinho <br> <br>
+            Tipo: Celular
+        </p>
+        <br> <br>
+
+        <h3>Quer sua marca no Campus Mobile? Entre em contato e seja nosso patrocinador!</h3>
+        <img style="border-radius: 10px;" src="SUA MARCA AQUI.png" alt="QR Code para Pix">
+    </section>
+
+    <section id="videos" class="videos">
+        <h2>Vídeos</h2>
+        <iframe style="border-radius: 10px;" width="560" height="315" src="https://www.youtube.com/embed/S84Alc-lPSY?si=8dkzIs304_-zweqK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe style="border-radius: 10px;" width="560" height="315" src="https://www.youtube.com/embed/XWv49xOAse4?si=aPyTn2jO8Nctj1Ma" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <p><strong>Projeto BEACON NAVIGATOR &copy; 2024 </strong></p> <br>
+        <p>Redes sociais: <a href="https://www.instagram.com/marinho.ai.solutions/">@marinho.ai.solutions</a></p> <br>
+        <p>Número para mais informações: 81987228835</p> <br>
+        <p>Email para contato: marinho.tecnologias@gmail.com</p>
+    </footer>
+</body>
+
+<script>
+    document.getElementById('copy-btn').addEventListener('click', function() {
+        const pixKey = document.getElementById('pix-key').innerText;
+        navigator.clipboard.writeText(pixKey).then(() => {
+            alert('Chave Pix copiada para a área de transferência!');
+        }).catch(err => {
+            alert('Erro ao copiar a chave Pix. Por favor, tente novamente.');
+        });
+    });
+</script>
+</html>
